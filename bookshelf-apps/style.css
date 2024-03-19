@@ -86,7 +86,7 @@ button.btn-search{
 .list-buku >
 .book-item >
 .btn-action >
-.del-btn{
+.del-btn,.del-btn-finished{
     background-color: #d9534f;
     margin: 5px;
 }

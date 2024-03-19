@@ -14,7 +14,7 @@
     <div class="container">
         <div class="card content-input">
             <h2>Tambah Data Buku</h2>
-            <form action="#" class="form">
+            <form id="form">
                 <div class="form-group">
                     <label for="judul">Judul</label>
                     <input type="text" required id="judul" autocomplete="off">
@@ -29,14 +29,14 @@
                 </div>
                 <div class="form-group">
                     <label for="status">Selesai dibaca</label>
-                    <input type="checkbox" required id="status">
+                    <input type="checkbox" id="status">
                 </div>
                 <button type="submit" class="btn-save">Simpan Buku</button>
             </form>
         </div>
         <div class="card content-search">
             <h2>Cari Buku</h2>
-            <form action="#" class="search-form">
+            <form id="search-form">
                 <label for="search-title">Judul</label>
                 <input type="text" autocomplete="off" id="search-title">
                 <button type="submit" class="btn-search">Cari</button>
@@ -45,29 +45,13 @@
         <div class="card content-rak">
             <h2>Belum selesai dibaca</h2>
             <div class="list-buku non-complete" id="non-complete">
-                <article class="book-item">
-                    <h2>Test Buku</h2>
-                    <p>Penulis : Penulis 1</p>
-                    <p>Tahun : 2024</p>
-                    <div class="btn-action">
-                        <button class="end-read-btn">Selesai</button>
-                        <button class="del-btn">Hapus</button>
-                    </div>
-                </article>
+
             </div>
         </div>
         <div class="card content-rak">
             <h2>Selesai dibaca</h2>
-            <div class="list-buku is-complete">
-                <article class="book-item">
-                    <h2>Test Buku</h2>
-                    <p>Penulis : Penulis 1</p>
-                    <p>Tahun : 2024</p>
-                    <div class="btn-action">
-                        <button class="end-read-btn">Belum Selesai</button>
-                        <button class="del-btn">Hapus</button>
-                    </div>
-                </article>
+            <div class="list-buku " id="is-complete">
+                
             </div>
         </div>
     </div>
