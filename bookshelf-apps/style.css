@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6495ed;
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.card{
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 20px;
+}  
+.card h2{
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}  
+.card input,
+.card button{
+    width: 100%;
+    padding: 10px 0 10px;
+    margin-bottom: 10px;
+    border: 1px solid #6495ed;
+    border-radius: 4px;
+}
+.card input[type="checkbox"]{
+    width: fit-content;
+}
+.card button{
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.card 
+button.btn-save{
+    background-color: #6495ed;
+}
+.card 
+button.btn-search{
+    background-color: #feae36;
+}
+.content-rak > 
+.list-buku > 
+.book-item{
+    padding: 8px 16px 16px 16px;
+    border: 1px solid #6495ed;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: aliceblue;
+}
+.content-rak >
+.list-buku >
+.book-item >
+.btn-action{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.content-rak >
+.list-buku >
+.book-item >
+.btn-action >
+.end-read-btn{
+    background-color: #5cb85c;
+    margin: 5px;
+}
+.content-rak >
+.list-buku >
+.book-item >
+.btn-action >
+.del-btn{
+    background-color: #d9534f;
+    margin: 5px;
+}
+.content-input >
+.form >
+.form-group >
+input{
+    padding: 8px 0 8px 8px;
+}
+.content-search >
+.search-form >
+input{
+    padding: 8px 0 8px 8px;
+}
