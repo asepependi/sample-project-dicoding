@@ -12,7 +12,7 @@ function input() {
         id: +new Date,
         title: judul,
         author: penulis,
-        year: tahun,
+        year: parseInt(tahun),
         isComplete: status
     }
     BOOKS.push(formVal)
@@ -101,9 +101,9 @@ function contentContainer(dataBook) {
     const title = document.createElement('h2')
     title.innerHTML = dataBook.title
     const author = document.createElement('p')
-    author.innerHTML = 'Penulis :'+dataBook.author
+    author.innerHTML = 'Penulis : '+dataBook.author
     const year = document.createElement('p')
-    year.innerHTML = 'Tahun :'+dataBook.year
+    year.innerHTML = 'Tahun : '+dataBook.year
     const btnAction = document.createElement('div')
     btnAction.classList.add('btn-action')
     article.append(title, author, year, btnAction)
