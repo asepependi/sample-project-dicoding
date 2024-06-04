@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body{
+  font-family: 'Quicksand', sans-serif;
+  margin: 0 0;
+  padding: 0;
+  background-color: #ffefef;
+}
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #f57d1f;
+  color: white;
+  padding: 12px;
+  z-index: 100;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+.menu{
+  width: 100%;
+  z-index: 1000;
+}
+.fixed-menu{
+  top: 0;
+  position: fixed;
+  background-color: #ffefef;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 100px;
+  transition: all 0.3s ease;
+}
+.nav .logo h1{
+  font-weight: 600;
+  color: #f57d1f;
+  margin: 0;
+  padding: 7px;
+}
+.nav .logo b{
+  color: black;
+}
+.nav .logo a{
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav ul{
+  display: flex;
+  list-style: none;
+}
+.nav ul li{
+  margin-right: 30px;
+}
+.nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 12px 14px;
+}
+.nav ul .active::after{
+  content: '';
+  width: 50%;
+  height: 3px;
+  background-color: #f57d1f;
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+}
+.menu-toggle {
+  display: none;
+  padding: 14px 15px;
+  border: none;
+  background-color: transparent;
+}
+.jumbotron{
+  background-image: url('../public/images/heros/hero-image_3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+}
+.content{
+  margin-top: 120px;
+}
+.content h2{
+  margin-bottom: 20px;
+}
+.content a{
+  padding: 13px 23px;
+  background-color: #f57d1f;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.text-center{
+  text-align: center !important;
+}
+.list-resto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+}
+.list-resto-favorite {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+.menu-item {
+  margin: 20px;
+  width: 300px;
+  border: 1px solid #f57d1f;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.menu-item .info {
+  padding: 10px;
+  background-color: #f8e8e8;
+  color: black;
+}
+.menu-item h3 {
+  margin: 0;
+}
+.menu-item p {
+  margin: 5px 0;
+}
+section{
+  padding-top: 5rem;
+}
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: -5px;
+}
+.footer-content p {
+  margin: 0;
+}
+.footer-content b{
+  color: #f57d1f;
+}
+.restaurant-detail{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px 16px;
+}
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Poster container styling */
+.img-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* Poster image styling */
+.img {
+  width: 100%;
+  display: block;
+}
+
+/* Title styling */
+.title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px; /* Adjust the margin to create space from the top */
+}
+
+/* Info container styling */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Information styling */
+.info, .desc {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Specific styling for information and description */
+.info {
+  margin-right: 10px;
+}
+
+.desc {
+  margin-left: 10px;
+}
+
+/* Ensure text is readable and centers titles */
+.info h3, .desc h3 {
+  text-align: center;
+}
+
+/* Menu container styling */
+.menu-container {
+  margin-bottom: 20px;
+}
+.menu-container>h3{
+  text-align: center;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list .food, .menu-list .drink {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+.menu-list .food {
+  margin-right: 10px;
+}
+
+.menu-list .drink {
+  margin-left: 10px;
+}
+
+/* Reviews container styling */
+.reviews-container {
+  margin-bottom: 20px;
+}
+
+.reviews-container>h3{
+  text-align: center;
+}
+
+.review-list {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+.review-list .review-item {
+  margin-bottom: 10px;
+}
+
+.review-list .review-item h4 {
+  margin: 0;
+  font-size: 18px;
+}
+.btn-favorite {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f57d1f;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+@media screen and (min-width: 1200px) {
+  main{
+    min-width: 1200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav{
+    padding: 10px 50px;
+  }
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #f57d1f;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .nav ul li {
+    text-align: center;
+  }
+  .nav ul li a {
+    color: #fff;
+    padding: 12px;
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 26px;
+    padding: 7px 12px;
+  }
+  .nav ul.active {
+    display: flex;
+    top: 49px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .info-container, .menu-list {
+    flex-direction: column;
+  }
+  .info, .desc, .food, .drink {
+    margin: 10px 0;
+  }
+  /* .food, .drink {
+    margin: 0;
+  } */
+  .menu-list .drink, .menu-list .food {
+    margin: 10px 0;
+  }
+}
